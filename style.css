@@ -15,6 +15,7 @@
   font-family: 'Lato', sans-serif;
   color: #505962;
   text: justify
+  padding:0 !important;
  }
 
  .offset:before{
@@ -173,8 +174,10 @@ div .card{
  align-items: center;
  box-shadow: 0 0 15px rgba(0,0,0,0.4);
  padding: 10px 20px;
- max-width: 500px;
- max-height: 500px;
+ width: 100%;
+ height: auto;
+ position: relative !important;
+ display: flex !important;
 
 }
 div .card .h5 .card-title{
@@ -250,10 +253,38 @@ blockquote .svg-inline--fa{
 
 /*** start Contact Section ***/
 footer{
+ background-color: #40474e;
+ color:	#FFFFFF;
+ text-align: center;
+}
+.fa-envelope-open-text{
+margin-top: 10px;
+margin-bottom:5px;
+ margin-left: 10px;
+ color:#20B2AA;
+}
+
+.fa-map-marker-alt{
+ color:#20B2AA;
+ margin-bottom:5px;
+}
+.fa-phone-office{
+color:#20B2AA;
+}
+.card
+/*hr.socket{
+  width:100%;
+  border-top: .2rem solid #666b71;
+  margin-top: 3rem;
+  text-align:center;
+}*/
+/*footer{
   background-color: #40474e;
   color: #fff;
   padding: 2rem 0 2rem;
   margin-top: 1rem;
+  width:100%;
+  height:100%;
 }
 footer img{
   height: 3rem;
@@ -262,6 +293,12 @@ footer img{
 footer a{
   color:#fff;
 }
+footer p{
+    margin-top: 5px;
+    text-align:center;
+
+
+}
 footer svg.svg-inline--fa{
   font-size:1.6rem;
   margin: 1.2rem .5rem 0 0;
@@ -269,11 +306,7 @@ footer svg.svg-inline--fa{
 footer svg.svg-inline--fa:hover{
   color:#1ebba3!important;
 }
-hr.socket{
-  width:100%;
-  border-top: .2rem solid #666b71;
-  margin-top: 3rem;
-}
+*/
 
 .btn,svg{
   -webkit-transition: 1s ease-in-out;
@@ -304,6 +337,16 @@ Small (sm) devices (landscape phones, 576px and up)
           html{
           font-size:8px;
           }
+       footer{
+         width:2000px;
+         height: auto;
+       }
+       footer p{
+        padding-right:200px;
+            padding-left:200px;
+            margin-left:100px;
+            margin-right: 100px;
+       }
 
  }
 /*
