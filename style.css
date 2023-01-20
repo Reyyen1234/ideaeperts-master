@@ -2,9 +2,14 @@
  html {
      box-sizing: border-box;
  }
- *, *::before, *::after {
-     box-sizing: inherit;
+ *{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
  }
+ /**, *::before, *::after {
+     box-sizing: inherit;
+ }*/
  body{
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
@@ -111,7 +116,7 @@ button:focus {
 .narrow h1{
   font-size: 2.4rem;
 }
-.btn-secondary{
+/*.btn-secondary{
   border-width: medium;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -125,7 +130,7 @@ button:focus {
 .btn-secondary:hover{
   background-color: #189582;
   border-color: #189582;
-}
+}*/
 
 /*** start Features Section ***/
 
@@ -275,8 +280,9 @@ hr.socket{
 }
 
 /*--- Media Queries ---*/
+
 Small (sm) devices (landscape phones, 576px and up)
-@media all and (min-width: 576px) {
+@media screen and (min-width: 576px) {
    .caption h3{
      font-size: 80px;
      padding-bottom: 1.2rem;
@@ -295,10 +301,12 @@ Small (sm) devices (landscape phones, 576px and up)
            max-width: 300px;
            height: auto;
           }
-
+          html{
+          font-size:8px;
+          }
 
  }
-
+/*
 Medium (md) devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
@@ -326,11 +334,8 @@ Large (lg) devices (desktops, 992px and up)
       font-size: 3rem;
     }
 
-
-
-
-
  }
+*/
 
 
 /*============ BOOTSTRAP BREAK POINTS:
